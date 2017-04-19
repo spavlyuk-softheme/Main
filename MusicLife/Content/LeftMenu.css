@@ -1,0 +1,7 @@
+﻿.leftmenu.item {
+    border-style: solid;
+    border-color: black;
+    border-width: 0 1px;
+    padding: 10px 15px;
+    width: 130px;
+}

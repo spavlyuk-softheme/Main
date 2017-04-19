@@ -1,0 +1,31 @@
+﻿.header {
+    height: 42px;
+    left: 0;
+    top: 0;
+}
+
+    .header.wrapper {
+        position: fixed;
+        background-color: lightgreen;
+        width: 100%
+    }
+
+    .header.content {
+        width: 960px;
+        margin: 0 auto;
+        border-style: solid;
+        border-color: black;
+        border-width: 0 1px;
+    }
+
+    .header.menu.item {
+        border-style: solid;
+        border-color: black;
+        border-width: 0 1px;
+        padding: 10px 15px;
+        float: left;
+        margin: 0;
+    }
+    .header.menu.item.main {
+        width: 130px;
+    }
