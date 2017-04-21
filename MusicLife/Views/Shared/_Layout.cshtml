@@ -8,64 +8,30 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="header wrapper">
-        <div class="header content">
-            <div class="header menu item main">
-                @Html.ActionLink("Music life", "Index", "Home", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Новости", "Index", "Help", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Музыка", "Index", "Help", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Видео", "Index", "Help", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Релизы", "Index", "Help", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Радио", "Index", "Help", new { area = "" }, null)
-            </div>
-            <div class="header menu item">
-                @Html.ActionLink("Распознать музыку", "Index", "Help", new { area = "" }, null)
-            </div>
-        </div>
-    </div>
-    <div class="layout">
-        <div class="page">
-            <div class="leftmenu">
-                <div class="leftmenu item">
-                    @Html.ActionLink("Music life", "Index", "Home", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Новости", "Index", "Help", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Музыка", "Index", "Help", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Видео", "Index", "Help", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Релизы", "Index", "Help", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Радио", "Index", "Help", new { area = "" }, null)
-                </div>
-                <div class="leftmenu item">
-                    @Html.ActionLink("Распознать музыку", "Index", "Help", new { area = "" }, null)
-                </div>
-            </div>
-            @RenderBody()
-        </div>
-    </div>
-    <hr />
-    <footer class="footer">
-        <p>Все права защищены, бла бла бла</p>
-    </footer>
 
-    @RenderSection("scripts", required: false)
+    <div class="container">
+        <header class="header">
+            <p>Header</p>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li>@Html.ActionLink("ML", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Новости", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("REP", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("ROCK", "Index", "Home", new { area = "" }, null)</li>
+            </ul>
+        </nav>
+
+        <div>
+
+            @RenderBody()
+
+            <footer>
+                <p>Все права защищены, бла бла бла</p>
+            </footer>
+        </div>
+        @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>
