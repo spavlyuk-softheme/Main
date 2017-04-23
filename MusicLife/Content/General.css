@@ -5,4 +5,44 @@
 .container {
     margin: 0 auto;
     width: 960px;
+    background-color: lightblue;
+}
+
+#leftMenu {
+    background-color: lightcoral;
+    width: 160px;
+    float: left;
+}
+
+    #leftMenu menu li {
+        list-style: none;
+    }
+
+.content {
+    background-color: lightgreen;
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+.leftColumn {
+    background-color: lightseagreen;
+    width: 400px;
+    float: left;
+    position: relative;
+}
+
+
+
+.newsTitles {
+    background-color: lightcyan;
+    float: left;
+    position: relative;
+    width: 400px;
+}
+
+.charts {
+    width: 400px;
+    background-color: aqua;
+    position: relative;
 }
