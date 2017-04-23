@@ -1,0 +1,8 @@
+﻿.footer {
+    clear: both;
+    background-color: lightyellow;
+}
+
+    .footer p {
+        padding-left: 240px;
+    }

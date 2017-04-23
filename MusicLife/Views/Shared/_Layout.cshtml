@@ -18,19 +18,33 @@
             <ul>
                 <li>@Html.ActionLink("ML", "Index", "Home", new { area = "" }, null)</li>
                 <li>@Html.ActionLink("Новости", "Index", "Home", new { area = "" }, null)</li>
-                <li>@Html.ActionLink("REP", "Index", "Home", new { area = "" }, null)</li>
-                <li>@Html.ActionLink("ROCK", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Музыка", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Видео", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Релизы", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Радио", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Мое меню", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Админка", "Index", "Home", new { area = "" }, null)</li>
             </ul>
         </nav>
 
-        <div>
+        <section id="leftMenu">
+            <menu>
+                <li>@Html.ActionLink("Pop", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("REP", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("ROCK", "Index", "Home", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Electronic", "Index", "Home", new { area = "" }, null)</li>
+            </menu>
+        </section>
 
+        <section class="content">
             @RenderBody()
+        </section>
+        
+        <footer class="footer">
+            <p>Тут дополнительное меню</p>
+            <p>Тут правовая информация</p>
+        </footer>
 
-            <footer>
-                <p>Все права защищены, бла бла бла</p>
-            </footer>
-        </div>
         @RenderSection("scripts", required: false)
     </div>
 </body>
